@@ -1,0 +1,33 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-block: 10rem;
+  gap: 1rem;
+  max-width: 60rem;
+}
+
+.error > .heading {
+  font-size: 3.6rem;
+  color: #fb0000;
+}
+.error > .cause {
+  font-size: 2rem;
+}
+
+.error > button {
+  appearance: none;
+  border: transparent;
+  outline: transparent;
+
+  padding: 1.2rem 3rem;
+  border-radius: 0.8rem;
+
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #d9d9d9;
+  line-height: 2.4rem;
+  letter-spacing: -2.2%;
+  background-color: var(---dark-blue);
+}

@@ -1,0 +1,80 @@
+.filterContainer {
+  max-height: 0vh;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.optionContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.mobileBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-block: 2.4rem;
+}
+
+.mobileBtn > label > span {
+  cursor: pointer;
+
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background-color: #1a1635;
+  border-radius: 0.8rem;
+}
+
+.mobileBtn > label > input {
+  display: none;
+}
+.mobileBtn:has(input:checked) ~ .filterContainer {
+  max-height: 10000vh;
+  margin-block: 5.6rem 9.6rem;
+}
+.mobileBtn:has(input:checked) ~ .selectedOptions {
+  display: none;
+}
+.selectedOptions {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  margin-block-end: 2.4rem;
+}
+
+.selectedOptions > div {
+  display: flex;
+  padding: 0.4rem 1.2rem;
+  background-color: #0a8bec;
+  gap: 0.8rem;
+  border-radius: 100vh;
+  text-transform: capitalize;
+}
+
+.selectedOptions > div > button {
+  appearance: none;
+  border: transparent;
+  outline: transparent;
+  background-color: transparent;
+}
+
+.selectedOptions > div > button > img {
+  max-width: 1.2rem;
+  aspect-ratio: 1;
+}
+
+@media screen and (min-width: 576px) {
+  .mobileBtn {
+    display: none;
+  }
+  .filterContainer {
+    max-height: 10000vh;
+    margin-block: 5.6rem 9.6rem;
+  }
+  .selectedOptions {
+    display: none;
+  }
+}

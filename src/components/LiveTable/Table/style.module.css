@@ -1,0 +1,28 @@
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+  margin-block: 9.6rem 25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(min(28rem, 100%), 8fr) repeat(
+      3,
+      minmax(min(6rem, 100%), 1fr)
+    );
+  column-gap: 2rem;
+}
+
+.tableHead {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .tableHead {
+    display: none;
+  }
+  .tableContainer {
+    margin-block: 4.8rem 12.4rem;
+  }
+}

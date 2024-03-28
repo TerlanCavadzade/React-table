@@ -1,0 +1,29 @@
+.optionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5.6rem;
+
+  margin-top: 4.8rem;
+}
+
+.optionContainer > .option > .imgContainer {
+  max-width: 4.5rem;
+  aspect-ratio: 1;
+  opacity: 58%;
+}
+
+.optionContainer > .option > .title {
+  visibility: hidden;
+  user-select: none;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.optionContainer > .option.active > .imgContainer {
+  scale: 1.1;
+}
+.optionContainer > .option.active > .title {
+  visibility: visible;
+  user-select: auto;
+}

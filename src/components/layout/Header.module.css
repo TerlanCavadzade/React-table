@@ -1,0 +1,22 @@
+.header > nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  display: none;
+  max-width: 12.1rem;
+  cursor: pointer;
+}
+.hamburger > label > input {
+  display: none;
+}
+
+/* menu logic */
+/* .hamburger:has(>label>input:checked) ~ .menu {} */
+
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: initial;
+  }
+}

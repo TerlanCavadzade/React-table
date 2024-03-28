@@ -1,0 +1,33 @@
+.linkContainer {
+  display: flex;
+  overflow: auto;
+}
+.linkContainer > a {
+  flex: 1 0 14.8rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid var(---dark-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  text-transform: capitalize;
+}
+
+.linkContainer > a.active {
+  border-color: #0a8bec;
+  border-width: 2px;
+}
+
+@media screen and (max-width: 576px) {
+  .linkContainer:global(.container) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .linkContainer > a {
+    padding-bottom: 1.6rem;
+  }
+}

@@ -1,0 +1,43 @@
+.headingContainer {
+  display: flex;
+  gap: 3.2rem;
+  margin-block: 18rem 4.8rem;
+}
+
+.headingContainer > .leftArrow > a > img {
+  height: auto;
+  width: 2.8rem;
+  aspect-ratio: 1;
+}
+
+.headingContainer > .mainContent {
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.headingContainer > .mainContent > .additionalInfo {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.headingContainer > .mainContent > .additionalInfo > p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .headingContainer {
+    margin-block: 4.8rem 5.2rem;
+  }
+
+  .headingContainer > .mainContent > .additionalInfo {
+    margin-top: 0.8rem;
+    color: #9598b1;
+    gap: 1.2rem;
+  }
+  .headingContainer > .mainContent > .additionalInfo > p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}

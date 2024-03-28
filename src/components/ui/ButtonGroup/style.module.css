@@ -1,0 +1,27 @@
+.buttonGroup {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+  border: 1px solid var(---dark-blue);
+  border-radius: 0.8rem;
+}
+
+.buttonGroup > button {
+  appearance: none;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+
+  padding: 1.2rem 3rem;
+  border-radius: inherit;
+
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #d9d9d9;
+  line-height: 2.4rem;
+  letter-spacing: -2.2%;
+}
+.buttonGroup > button.active {
+  background-color: var(---dark-blue);
+}
